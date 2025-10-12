@@ -11,7 +11,7 @@ const historia = defineCollection({
 
 
 
-const menu = defineCollection({
+const Menu = defineCollection({
     schema: z.object({
         title: z.string(),
         price: z.number(),
@@ -22,4 +22,4 @@ const menu = defineCollection({
     }),
 })
 
-export const collections = {historia, menu }
+export const collections = {historia, Menu }

@@ -4,7 +4,7 @@ import { getCollection } from "astro:content";
 import { promise } from "astro:schema";
 import "./PopularMenu.style.css";
 
-var menuItems = await getCollection("menu");
+var menuItems = await getCollection("Menu");
 menuItems = menuItems.sort((a, b) => b.data.price - a.data.price);
 menuItems = menuItems.slice(0, 3);
 ---
