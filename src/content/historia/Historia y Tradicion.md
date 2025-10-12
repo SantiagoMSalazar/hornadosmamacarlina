@@ -4,7 +4,7 @@ description: Una breve historia sobre el nacimiento de este restaurante
 author: Carlina Moncayo
 founded: 1967
 ---
-Hornados Mamá Carlina Es un retaurante que deleita paladares desde 1967, La señora Carlina Moncayo, junto al apoyo de su esposo Miguel Salazar, inician su trayectoria gastronómica con recetas tradicionales como la fritada, ofrecía su producto en el parque cental del cantó Espejo, parque la Libertad, después llevó sus deliciosos platos al Mercado Central de la ciudad de El Ángel, con el pasar del tiempo incursiona en uno de los manjares insignia de la provincia del Carchi, el famoso Hornado Pastuzo, con su inigualable receta que la perfeccionó con experticia y amor por su gente.
+**Hornados Mamá Carlina** Es un retaurante que deleita paladares desde 1967, La señora Carlina Moncayo, junto al apoyo de su esposo Miguel Salazar González, inician su trayectoria gastronómica con recetas tradicionales como la fritada, ofreciendo su producto en el parque cental del cantón Espejo, parque la Libertad, después llevó sus deliciosos platos al **Mercado Central de la ciudad de El Ángel**, con el pasar del tiempo incursiona en uno de los manjares insignia de la provincia del Carchi, el **famoso Hornado Pastuzo**, con su inigualable receta que la perfeccionó con experticia y amor por su gente.
 
 ![Foto de mamá carlina](/mama_carlina.jpg)
 
