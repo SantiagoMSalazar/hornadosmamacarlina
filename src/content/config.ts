@@ -22,4 +22,4 @@ const menu = defineCollection({
     }),
 })
 
-export const collections = {historia, menu}
+export const collections = {historia, menu }
