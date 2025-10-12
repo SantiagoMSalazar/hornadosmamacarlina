@@ -1,0 +1,343 @@
+.history-hero {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-white);
+  overflow: hidden;
+  padding-top: 120px;
+  padding-bottom: var(--spacing-xl);
+}
+
+.history-hero-content {
+  text-align: center;
+  animation: fadeInUp 0.8s ease-out;
+  position: relative;
+  z-index: 2;
+}
+
+.history-subtitle {
+  color: var(--color-text-light);
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: var(--spacing-sm);
+  display: block;
+}
+
+.history-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text);
+}
+
+.highlight {
+  color: var(--color-yellow);
+  position: relative;
+}
+
+.history-intro {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: var(--color-text-light);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.history-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(135deg, var(--color-yellow) 0%, #f4c430 100%);
+  clip-path: ellipse(100% 100% at 50% 100%);
+  z-index: 1;
+}
+
+/* Content Section */
+.history-content-section {
+  padding: var(--spacing-xl) 0;
+  background: var(--color-beige);
+}
+
+/* Timeline */
+.history-timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--spacing-md) 0;
+}
+
+.history-timeline::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, var(--color-yellow) 0%, var(--color-red) 100%);
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 80px;
+  margin-bottom: var(--spacing-lg);
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  background: var(--color-yellow);
+  border: 4px solid var(--color-white);
+  border-radius: 50%;
+  box-shadow: var(--shadow-soft);
+  z-index: 2;
+}
+
+.timeline-content {
+  position: relative;
+  padding: var(--spacing-md);
+  background: var(--color-white);
+  border-left: 4px solid var(--color-yellow);
+}
+
+.timeline-year {
+  display: inline-block;
+  margin-bottom: var(--spacing-sm);
+  font-size: 0.9rem;
+}
+
+.timeline-title {
+  color: var(--color-text);
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-sm);
+  font-weight: 700;
+}
+
+.timeline-text {
+  color: var(--color-text-light);
+  line-height: 1.8;
+}
+
+.timeline-text p {
+  margin-bottom: var(--spacing-sm);
+}
+
+.timeline-text h2 {
+  color: var(--color-text);
+  font-size: 1.3rem;
+  margin-top: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
+}
+
+.timeline-text h3 {
+  color: var(--color-text);
+  font-size: 1.1rem;
+  margin-top: var(--spacing-sm);
+  margin-bottom: var(--spacing-xs);
+}
+
+.timeline-text ul,
+.timeline-text ol {
+  margin-left: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
+}
+
+.timeline-text li {
+  margin-bottom: var(--spacing-xs);
+  color: var(--color-text-light);
+}
+
+/* Estilos para imágenes en el contenido */
+.timeline-text img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: var(--shadow-medium);
+  margin: var(--spacing-md) 0;
+  display: block;
+}
+
+.timeline-text figure {
+  margin: var(--spacing-md) 0;
+}
+
+.timeline-text figcaption {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  font-style: italic;
+  margin-top: var(--spacing-xs);
+}
+
+/* Estilos para enlaces en el contenido */
+.timeline-text a {
+  color: var(--color-yellow);
+  text-decoration: underline;
+  transition: all 0.3s ease;
+}
+
+.timeline-text a:hover {
+  color: var(--color-red);
+  text-decoration: none;
+}
+
+/* Estilos para blockquotes */
+.timeline-text blockquote {
+  border-left: 4px solid var(--color-yellow);
+  padding-left: var(--spacing-md);
+  margin: var(--spacing-md) 0;
+  font-style: italic;
+  color: var(--color-text-light);
+  background: var(--color-beige);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: 8px;
+}
+
+/* Estilos para código */
+.timeline-text code {
+  background: var(--color-beige);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+  color: var(--color-red);
+}
+
+.timeline-text pre {
+  background: var(--color-beige);
+  padding: var(--spacing-sm);
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: var(--spacing-sm) 0;
+}
+
+.timeline-text pre code {
+  background: none;
+  padding: 0;
+  color: var(--color-text);
+}
+
+/* CTA Section */
+.history-cta {
+  background: linear-gradient(135deg, var(--color-yellow) 0%, #f4c430 100%);
+  padding: var(--spacing-xl) 0;
+  text-align: center;
+}
+
+.cta-content h2 {
+  color: var(--color-white);
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: var(--spacing-sm);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.cta-content p {
+  color: var(--color-white);
+  font-size: 1.2rem;
+  margin-bottom: var(--spacing-md);
+  opacity: 0.95;
+}
+
+.cta-content .btn {
+  background: var(--color-white);
+  color: var(--color-yellow);
+  font-weight: 700;
+  box-shadow: var(--shadow-medium);
+}
+
+.cta-content .btn:hover {
+  background: var(--color-beige);
+  transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .history-hero {
+    min-height: 50vh;
+    padding-top: 100px;
+    padding-bottom: var(--spacing-lg);
+  }
+
+  .history-wave {
+    height: 80px;
+  }
+
+  .history-timeline::before {
+    left: 15px;
+  }
+
+  .timeline-item {
+    padding-left: 50px;
+  }
+
+  .timeline-marker {
+    left: 5px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .timeline-content {
+    padding: var(--spacing-sm);
+  }
+
+  .timeline-title {
+    font-size: 1.3rem;
+  }
+
+  .history-cta {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .timeline-text img {
+    border-radius: 8px;
+    margin: var(--spacing-sm) 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline-item {
+    padding-left: 40px;
+  }
+
+  .timeline-marker {
+    width: 16px;
+    height: 16px;
+  }
+
+  .history-timeline::before {
+    left: 12px;
+    width: 3px;
+  }
+
+  .timeline-text img {
+    border-radius: 6px;
+    margin: var(--spacing-xs) 0;
+  }
+
+  .timeline-text blockquote {
+    padding: var(--spacing-xs) var(--spacing-sm);
+  }
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

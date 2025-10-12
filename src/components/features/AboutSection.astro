@@ -1,0 +1,258 @@
+---
+---
+
+<section id="about" class="about-section">
+  <div class="container">
+    <div class="about-content">
+      <!-- Lado izquierdo - Imágenes -->
+      <div class="about-images">
+        <div class="about-image-container">
+          <div class="background-shape"></div>
+          <img 
+            src="/mama_carlina.jpg" 
+            alt="Plato tradicional ecuatoriano"
+            class="about-main-image"
+          />
+        </div>
+      </div>
+      
+      <!-- Lado derecho - Texto -->
+      <div class="about-text">
+        <h2 class="about-title">
+          Sobre <span class="highlight">Nosotros</span>
+        </h2>
+        <p class="about-description">
+          En Hornados Mamá Carlina, llevamos más de 60 años preservando la auténtica tradición 
+          culinaria carchense. Nuestra historia comenzó en los fogones familiares donde aprendimos 
+          los secretos de la cocina tradicional que hoy compartimos con cada uno de nuestros comensales.
+        </p>
+        <p class="about-description">
+          Cada plato que servimos cuenta una historia, cada ingrediente ha sido seleccionado 
+          cuidadosamente, y cada técnica culinaria ha sido perfeccionada a lo largo de los años 
+          para brindarte una experiencia gastronómica única e inolvidable.
+        </p>
+        <div class="about-features">
+          <div class="feature">
+            <span class="feature-text">Recetas Tradicionales</span>
+          </div>
+          <div class="feature">
+            <span class="feature-text">Ingredientes Frescos</span>
+          </div>
+          
+        </div>
+        <a href="/History" class="btn btn-primary about-cta">
+          Conoce nuestra historia
+          <span class="btn-icon">→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about-section {
+    padding: var(--spacing-xl) 0;
+    background: var(--color-beige);
+    position: relative;
+  }
+  
+  .about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+    align-items: center;
+  }
+  
+  .about-images {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInUp 0.8s ease-out;
+  }
+  
+  .about-image-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 800px;
+  }
+  
+  .background-shape {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    height: 550px;
+    background: var(--color-yellow);
+    border-radius: 50% 30% 50% 30%;
+    opacity: 0.8;
+    animation: rotate 20s linear infinite;
+  }
+  
+  .about-main-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: var(--shadow-medium);
+    border: 6px solid var(--color-white);
+    z-index: 2;
+  }
+  
+  .decorative-bottle {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 3;
+  }
+  
+  .bottle {
+    font-size: 3rem;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .about-text {
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+  }
+  
+  .about-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text);
+  }
+  
+  .highlight {
+    color: var(--color-yellow);
+  }
+  
+  .about-description {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text-light);
+  }
+  
+  .about-features {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    margin: var(--spacing-lg) 0;
+  }
+  
+  .feature {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm);
+    background: var(--color-white);
+    border-radius: 15px;
+    box-shadow: var(--shadow-soft);
+    transition: all 0.3s ease;
+  }
+  
+  .feature:hover {
+    transform: translateX(10px);
+    box-shadow: var(--shadow-medium);
+  }
+  
+  .feature-icon {
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-yellow);
+    border-radius: 50%;
+  }
+  
+  .feature-text {
+    font-weight: 600;
+    color: var(--color-text);
+  }
+  
+  .about-cta {
+    font-size: 1.1rem;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+  }
+  
+  /* Animaciones */
+  @keyframes rotate {
+    from {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .about-content {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-lg);
+    }
+    
+    .about-images {
+      order: -1;
+    }
+    
+    .about-image-container {
+      height: 300px;
+    }
+    
+    .background-shape {
+      width: 200px;
+      height: 200px;
+    }
+    
+    .about-main-image {
+      width: 180px;
+      height: 180px;
+    }
+    
+    .bottle {
+      font-size: 2rem;
+    }
+    
+    .about-features {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .feature {
+      flex: 1;
+      min-width: 150px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-features {
+      flex-direction: column;
+    }
+    
+    .feature {
+      min-width: auto;
+    }
+  }
+</style>

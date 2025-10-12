@@ -1,0 +1,62 @@
+---
+import { render } from "astro:content";
+import { getCollection } from "astro:content";
+import { promise } from "astro:schema";
+import "./PopularMenu.style.css";
+
+var menuItems = await getCollection("menu");
+menuItems = menuItems.sort((a, b) => b.data.price - a.data.price);
+menuItems = menuItems.slice(0, 3);
+---
+
+<section id="menu" class="popular-menu-section">
+  <div class="container">
+    
+    <section>
+      <div class="section-header">
+      <h2 class="section-title">
+        Platos Más <span class="highlight">Populares</span>
+      </h2>
+      <p class="section-subtitle">
+        Descubre los favoritos de nuestros comensales, preparados con amor y tradición
+      </p>
+    </div>
+    <div class="menu-grid">
+      {await Promise.all(
+        menuItems.map(async (item) => {
+           let {Content} = await render(item);
+           
+        return (
+        <div class="menu-card">
+          <div class="card-image">
+            <img src={`/${item.data.image}`} alt={item.data.title} />
+            <div class={`card-badge badge-green`}>
+              {item.data.tag}
+            </div>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">{item.data.title}</h3>
+            <div class="stars">
+              {Array.from({ length: item.data.stars }).map(() => (
+                <span class="star">★</span>
+              ))}
+            </div>
+            <p class="card-description">
+              <Content />
+            </p>
+            <div class="card-footer">
+              <span class="card-price">${item.data.price.toFixed(2)}</span>
+              <a href="https://wa.me/593998040014" class="card-btn">SIGUIENTE</a>
+            </div>
+          </div>
+        </div>
+      )})
+      )}
+    </div>
+    </section>
+    <div class="pagination-dots">
+      {menuItems.map((_, index) => (
+        <span class={`dot ${index === 0 ? 'active' : ''}`}></span>
+      ))}
+  </div>
+</section>

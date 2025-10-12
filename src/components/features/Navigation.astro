@@ -1,0 +1,60 @@
+---
+import "./Navigation.style.css"
+---
+
+<nav class="navigation">
+  <div class="">
+    <div class="nav-content">
+      <!-- Logo -->
+      <div class="logo">
+        <span class="logo-text">Hornados Mamá Carlina</span>
+      </div>
+      
+      <!-- Menú de navegación -->
+      <ul class="nav-menu">
+        <li><a href="/" class="nav-link">Inicio</a></li>
+        <li><a href="/#about" class="nav-link">Sobre Nosotros</a></li>
+        <li><a href="/#menu" class="nav-link">Menú</a></li>
+        <li><a href="/History" class="nav-link">Historia</a></li>
+        <li><a href="/#contact" class="nav-link">Contacto</a></li>
+      </ul>
+      
+      <!-- Menú móvil -->
+      <button class="mobile-menu-btn" aria-label="Menú">
+        ☰
+      </button>
+    </div>
+  </div>
+</nav>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const navigation = document.querySelector('.navigation');
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    // Manejo del scroll
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        navigation?.classList.add('scrolled');
+      } else {
+        navigation?.classList.remove('scrolled');
+      }
+    });
+    
+    // Toggle mobile menu
+    if (mobileMenuBtn && navMenu) {
+      mobileMenuBtn.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+      });
+    }
+    
+    // Close mobile menu when clicking on a link
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu?.classList.remove('active');
+      });
+    });
+  });
+</script>

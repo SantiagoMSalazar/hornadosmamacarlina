@@ -1,0 +1,325 @@
+---
+---
+
+<footer id="contact" class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <!-- Logo y descripción -->
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="logo-icon">🍽️</div>
+          <span class="logo-text">Hornados Mamá Carlina</span>
+        </div>
+        <p class="footer-description">
+          Auténtica tradición carchense desde hace más de 60 años. 
+          Cada plato cuenta una historia familiar llena de sabor y tradición.
+        </p>
+      </div>
+      
+      <!-- Información de contacto -->
+      <div class="footer-info">
+        <!-- Horarios -->
+        <div class="info-section">
+          <h4 class="info-title">Horarios de Atención</h4>
+          <div class="info-content">
+            <p><strong>Jueves y Viernes:</strong> 10:00 AM - 06:00 PM</p>
+            <p><strong>Sábados:</strong> 10:00 AM - 06:00 PM</p>
+          </div>
+        </div>
+        
+        <!-- Contacto -->
+        <div class="info-section">
+          <h4 class="info-title">Contacto</h4>
+          <div class="info-content">
+            <p><strong>Dirección:</strong> Av. Espejo y Calderón, El Ángel-Carchi</p>
+            <p><strong>Teléfono:</strong> 0999071030</p>
+            <p><strong>Email:</strong> hornadosmamacarlina@gmail.com</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <!-- Línea divisoria -->
+    <div class="footer-divider"></div>
+    
+    <!-- Footer inferior -->
+    <div class="footer-bottom">
+      <div class="footer-copyright">
+        <p>&copy; 2024 Hornados Mamá Carlina. Todos los derechos reservados.</p>
+      </div>
+      <div class="footer-social">
+        <a href="#" class="social-link" aria-label="Facebook">📘</a>
+        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+        <a href="#" class="social-link" aria-label="WhatsApp">💬</a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Imagen decorativa -->
+  <div class="footer-decoration">
+    <img 
+      src="/foto plato principal 1.png" 
+      alt="Plato decorativo"
+      class="footer-dish"
+    />
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background: var(--color-cream);
+    padding: var(--spacing-xl) 0 var(--spacing-md) 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .footer-brand {
+    animation: fadeInUp 0.6s ease-out;
+  }
+  
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .logo-icon {
+    font-size: 2rem;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+  }
+  
+  .logo-text {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--color-text);
+  }
+  
+  .footer-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-text-light);
+    max-width: 300px;
+  }
+  
+  .footer-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-lg);
+    animation: fadeInUp 0.6s ease-out 0.2s both;
+  }
+  
+  .info-section {
+    background: var(--color-white);
+    padding: var(--spacing-md);
+    border-radius: 15px;
+    box-shadow: var(--shadow-soft);
+    transition: all 0.3s ease;
+  }
+  
+  .info-section:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
+  }
+  
+  .info-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-yellow);
+    margin-bottom: var(--spacing-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .info-content p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+    color: var(--color-text-light);
+  }
+  
+  .info-content strong {
+    color: var(--color-text);
+  }
+  
+  .newsletter-form {
+    display: flex;
+    gap: var(--spacing-xs);
+    margin-top: var(--spacing-sm);
+  }
+  
+  .newsletter-input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 2px solid #f0f0f0;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    background: var(--color-cream);
+  }
+  
+  .newsletter-input:focus {
+    outline: none;
+    border-color: var(--color-yellow);
+    background: var(--color-white);
+  }
+  
+  .newsletter-btn {
+    background: var(--color-yellow);
+    color: var(--color-white);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+  }
+  
+  .newsletter-btn:hover {
+    background: #d49c1f;
+    transform: translateY(-2px);
+  }
+  
+  .footer-divider {
+    height: 2px;
+    background: linear-gradient(90deg, var(--color-yellow), var(--color-red), var(--color-yellow));
+    border-radius: 1px;
+    margin: var(--spacing-lg) 0;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+  }
+  
+  .footer-copyright p {
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+  
+  .footer-social {
+    display: flex;
+    gap: var(--spacing-sm);
+  }
+  
+  .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: var(--color-white);
+    border-radius: 50%;
+    font-size: 1.2rem;
+    text-decoration: none;
+    box-shadow: var(--shadow-soft);
+    transition: all 0.3s ease;
+  }
+  
+  .social-link:hover {
+    background: var(--color-yellow);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-medium);
+  }
+  
+  .footer-decoration {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0.3;
+    z-index: -1;
+  }
+  
+  .footer-dish {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    transform: translate(30%, 30%);
+    filter: grayscale(0.5);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .footer-content {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-lg);
+    }
+    
+    .footer-info {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-md);
+    }
+    
+    .newsletter-form {
+      flex-direction: column;
+    }
+    
+    .newsletter-btn {
+      align-self: center;
+      min-width: 150px;
+    }
+    
+    .footer-bottom {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .footer-dish {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-logo {
+      flex-direction: column;
+      text-align: center;
+      gap: var(--spacing-xs);
+    }
+    
+    .logo-text {
+      font-size: 1.2rem;
+    }
+    
+    .footer-description {
+      text-align: center;
+      max-width: none;
+    }
+  }
+</style>
+
+<script>
+  // Newsletter form handling
+  document.addEventListener('DOMContentLoaded', () => {
+    const newsletterForm = document.querySelector('.newsletter-form');
+    
+    if (newsletterForm) {
+      newsletterForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const email = e.target.querySelector('.newsletter-input').value;
+        
+        if (email) {
+          // Aquí podrías agregar la lógica para enviar el email
+          alert('¡Gracias por suscribirte! Te mantendremos informado sobre nuestras novedades.');
+          e.target.reset();
+        }
+      });
+    }
+  });
+</script>

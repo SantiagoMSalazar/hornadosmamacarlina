@@ -1,0 +1,58 @@
+---
+import Layout from "@layouts/Layout.astro"
+import Navigation from "@components/features/Navigation.astro"
+import {getCollection, render } from "astro:content"
+import "./History.style.css";
+
+const contents = await getCollection("historia")
+const renderedContents = await Promise.all(contents.map(async (content) => {
+  const { Content } = await render(content)
+  return { ...content, Content }
+}))
+---
+
+<Layout title="Historia - Hornados Mamá Carlina">
+  <Navigation />
+  
+  <section class="history-hero">
+    <div class="container">
+      <div class="history-hero-content">
+        <span class="history-subtitle">Nuestra Historia</span>
+        <h1 class="history-title">
+          Una Tradición de <span class="highlight">Sabor y Familia</span>
+        </h1>
+      </div>
+    </div>
+    <div class="history-wave"></div>
+  </section>
+
+  <section class="history-content-section">
+    <div class="container">
+      <div class="history-timeline">
+        {renderedContents.map(({ Content, data }, index) => (
+          <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content card">
+              {data.title && (
+                <h2 class="timeline-title">{data.title}</h2>
+              )}
+              <div class="timeline-text">
+                <Content />
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="history-cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>¿Listo para probar nuestra tradición?</h2>
+        <p>Visítanos y descubre el auténtico sabor de nuestros hornados</p>
+        <a href="/#menu" class="btn btn-primary">Ver Menú</a>
+      </div>
+    </div>
+  </section>
+</Layout>
