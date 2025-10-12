@@ -1,6 +1,6 @@
 ---
 title: Plato Hornado Tradicional
-price: 3.50
+price: 3.00
 tag: recomendado
 stars: 5
 image: 'hornado_pastuso.jpg'
