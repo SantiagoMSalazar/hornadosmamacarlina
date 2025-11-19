@@ -1,0 +1,82 @@
+{
+  "título": "Hornados Mamá Carlina — Una tradición familiar",
+  "duración": "8s",
+  "estilo": "comercial, cálido, alegre y apetititoso",
+  "movimientos_de_cámara": [
+    "Dolly aéreo descendente hacia un horno de leña encendido, iluminando el ambiente con tonos rojizos y humo danzante",
+    "Plano detalle del fuego crepitante y las brasas vivas dentro del horno",
+    "Giro suave alrededor del plato mientras el vapor se eleva en cámara lenta",
+    "Macro del cuchillo cortando el cuero crocante con precisión deliciosa",
+    "Push-in hacia el plato completo servido sobre mesa rústica con luz de tarde",
+    "Tilt final mostrando el logo entre destellos dorados y humo suave"
+  ],
+  "entorno": {
+    "escenario": "horno de ladrillo, vajilla moderna y mesa de madera",
+    "animación": "Humo flotante, brasas que respiran, rayos de sol moviéndose sobre los ingredientes",
+    "iluminación": "Cálida, con énfasis en tonos dorados y rojizos para resaltar la textura del hornado y el ambiente acogedor",
+    "vestimenta": "camisa blanca de manga larga arremangada, delantal rústico de tela naranja y jeans oscuros"
+
+  },
+  "animación_del_producto": {
+    "objeto": "Plato de hornado con cuero dorado, maíz desgranado blanco y papas cocinadas con cáscara",
+    "efectos": [
+      "Rotación de 360° con iluminación cálida para resaltar textura",
+      "Vapor animado saliendo del plato con partículas de luz",
+      "Transiciones suaves entre preparación, servido y presentación final"
+    ]
+  },
+  "efectos_visuales": [
+    "Destellos dorados sincronizados con los movimientos de cámara",
+    "Partículas flotantes, reflejos naturales y desenfoque cinematográfico",
+    "Cámara lenta en los momentos de corte y servido"
+  ],
+  "diseño_sonoro": {
+    "ambiente": "Chasquido del fuego, sonidos de cocina y murmullos de fondo",
+    "efectos": [
+      "Whoosh en las transiciones de cámara",
+      "Impacto leve en el corte del cuero",
+      "Subgrave sutil al aparecer el logo"
+    ],
+    "voz_en_off": "Voz masculina cálida y grave, alegre, tono cercano y confiable",
+    "música": "instrumental andina y moderna, ritmo alegre y acogedor"
+  },
+  "textos_animados": {
+    "eslogan": "deleitnando a paladares desde 1967",
+    "animación": "Aparece entre el humo con brillo cálido y se disuelve con efecto de luz"
+  },
+  "paleta_de_color": {
+    "primario": "#E8B12E",
+    "secundario": "#B23A28",
+    "acentos": ["#4F772D", "#5A2E1B", "#F7E6C4"]
+  },
+  "guión": [
+    {
+      "segundo": 0,
+      "imagen": "El horno de leña arde con fuerza, humo dorado sube en cámara lenta",
+      "audio": "Sonido de fuego y un suave whoosh",
+      "voz": "¿Se te antoja degustar un hornado de verdad?"
+    },
+    {
+      "segundo": 2,
+      "imagen": "Cuchillo corta el cuero crocante del hornado, crujido perfecto",
+      "audio": "Sonido nítido del corte, vapor escapando",
+      "voz": "¿Perfeccionado por tres generaciones de tradición familiar?"
+    },
+    {
+      "segundo": 4,
+      "imagen": "Plato servido con mote, aguacate y tortillas, todo brilla bajo luz cálida",
+      "audio": "Whoosh de transición, fondo musical andino se eleva",
+      "voz": "Ven y disfruta el auténtico sabor del hornado carchese, ¡Hornados Mamá Carlina!!"
+    },
+    {
+      "segundo": 7,
+      "imagen": "Logo de Hornados Mamá Carlina sobre fondo de brasas vivas",
+      "audio": "Subgrave leve, fade out de música",
+      "voz": "Ubicados en la Ciudad del Ángel"
+    }
+  ],
+  "plano_final": {
+    "composición": "Logo centrado sobre horno encendido y humo dorado",
+    "cta": "El mejor hornado en el paraíso más cercano al cielo"
+  }
+}

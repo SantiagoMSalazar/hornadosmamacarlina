@@ -10,6 +10,6 @@ founded: 1967
 
 Con el pasar de sus años La receta se transmite a doña Mariana Salazar Moncayo, su hija, que junto a su esposo, Vitelio Delgado, potencian el negocio en su local propio donde los comenzales disfutaban de una comida llena de tradición mientras compartían cálidas conversaciones con "doña Marianita" como le llamaban sus clientes. Cuenta la señora Marianita que la preparación del hornado no era cosa fácil. "Muchas veces pensamos en tecnificar la preparación con hornos insdustriales, pero el sabor no era igual que en horno de leña", y como siempre... el sabor y la calidad prevalecen.
 
-
+![Foto de Cristinita y Mamabita](/public/cris_mamabita.png)
 
 Ahora el negocio lo lleva doña Cristina Salazar, nieta de doña Carlina, donde instituye una marca que conlleva el plato estrella y el nombre fundador. Busca mantener el legado de una receta que se ha conservado gracias al amor y admiración de 3 generaciones seguidas, pero por su puesto, con el apoyo incondicional de su tía, la señora Marianita y sus padres.

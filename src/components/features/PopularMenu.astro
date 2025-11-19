@@ -5,7 +5,7 @@ import { promise } from "astro:schema";
 import "./PopularMenu.style.css";
 
 var menuItems = await getCollection("Menu");
-menuItems = menuItems.sort((a, b) => b.data.price - a.data.price);
+menuItems = menuItems.sort((a, b) => b.data.popularity - a.data.popularity);
 menuItems = menuItems.slice(0, 3);
 ---
 

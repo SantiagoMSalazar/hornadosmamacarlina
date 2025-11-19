@@ -6,4 +6,4 @@ stars: 5
 image: 'cosas_finas.jpeg'
 popularity: 8
 ---
-Nuestro clásico hornado pastuzo, con su cuero crujiente, acompañado de mote, papas con cáscara y ensalada fresca.
+Mote fresco, Arveja, chochos y chicharrón.
